@@ -1,5 +1,24 @@
 .board {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    height: 500px;
+    width: 500px;
+    /* background-color: black; */
+}
 
-    display: flexbox;
-    
+
+
+.topleft {
+    background: green;
+    height: 100px;
+}
+
+.topright {
+    background: green;
+}
+.buttomleft {
+    background: green;
+}
+.buttomright {
+    background: green;
 }
