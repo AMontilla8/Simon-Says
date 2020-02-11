@@ -3,33 +3,45 @@
 
 .board {
     display: grid;
-    grid-template-columns: auto auto auto;
     padding: 10px;
     background-color: teal;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1 fr 100px 1fr;
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-template-rows: 250px 78px 255px;
+    height: 585px;
+    width: 605px;
+    grid-gap: 2px 2px;
 }
 
 
 
 #topleft {
-    background-color:green;
+    background-color: green;
     border: 1px solid black;
-    padding: 20px;
+    grid-column: 1 / span 2;
 }
 
 #topright {
     background: red;
     border: 1px solid black;
-    padding: 20px;
+    grid-column: 3 / 5;
+    grid-row: 1;
 }
 #bottomleft {
     background: yellow;
     border: 1px solid black;
-    padding: 20px;    
+    grid-column: 1 /span 2;
+    grid-row: 3;
 }
 #bottomright {
     background: blue;
     border: 1px solid black;
+    grid-column: 3/ span 2;
+    grid-row: 3;
+}
+#innercircle {
+    background: dimgrey;
+    border: 1px solid black;
     padding: 20px;
+    grid-column: 2/span 2;
+    grid-row: 2;
 }
