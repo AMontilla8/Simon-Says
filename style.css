@@ -1,24 +1,35 @@
+
+
+
 .board {
     display: grid;
-    grid-template-columns: 100px 100px;
-    height: 500px;
-    width: 500px;
-    /* background-color: black; */
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    background-color: teal;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1 fr 100px 1fr;
 }
 
 
 
-.topleft {
-    background: green;
-    height: 100px;
+#topleft {
+    background-color:green;
+    border: 1px solid black;
+    padding: 20px;
 }
 
-.topright {
-    background: green;
+#topright {
+    background: red;
+    border: 1px solid black;
+    padding: 20px;
 }
-.buttomleft {
-    background: green;
+#bottomleft {
+    background: yellow;
+    border: 1px solid black;
+    padding: 20px;    
 }
-.buttomright {
-    background: green;
+#bottomright {
+    background: blue;
+    border: 1px solid black;
+    padding: 20px;
 }
