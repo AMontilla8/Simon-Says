@@ -10,38 +10,73 @@
     height: 585px;
     width: 605px;
     grid-gap: 2px 2px;
+    border-radius: 111px;
 }
 
 
 
 #topleft {
     background-color: green;
-    border: 1px solid black;
+    border: 8px solid black;
     grid-column: 1 / span 2;
+    border-radius: 90px;
+}
+#topleft:hover {
+    cursor: pointer;
+    background: chartreuse;
 }
 
 #topright {
-    background: red;
-    border: 1px solid black;
+    background: darkred;
+    border: 8px solid black;
     grid-column: 3 / 5;
     grid-row: 1;
+    border-radius: 90px;
 }
+#topright:hover {
+    cursor: pointer;
+    background: rgb(255, 0, 0);
+}
+
 #bottomleft {
-    background: yellow;
-    border: 1px solid black;
+    background: rgb(187, 187, 41);
+    border: 8px solid black;
     grid-column: 1 /span 2;
     grid-row: 3;
+    border-radius: 90px;
 }
+#bottomleft:hover {
+    cursor: pointer;
+    background: yellow;
+}
+
 #bottomright {
-    background: blue;
-    border: 1px solid black;
+    background: rgb(38, 38, 145);
+    border: 8px solid black;
     grid-column: 3/ span 2;
     grid-row: 3;
+    border-radius: 90px;
 }
+#bottomright:hover {
+    cursor: pointer;
+    background: rgb(0, 4, 255);
+}
+
 #innercircle {
     background: dimgrey;
-    border: 1px solid black;
-    padding: 20px;
+    border: 8px solid black;
+    padding: 3px;
     grid-column: 2/span 2;
     grid-row: 2;
+    border-radius: 90px;
+    text-align: center;
 }
+
+#start {
+    cursor: pointer;
+}
+#reset {
+    cursor: pointer;
+}
+
+
