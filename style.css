@@ -1,4 +1,17 @@
+body {
+    background-image: url(http://getwallpapers.com/wallpaper/full/0/7/6/307985.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    max-width: 600px;
+    margin: auto;
+    padding: 10px;
+}
 
+  
+  .toggle {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 
 
 .board {
@@ -11,6 +24,7 @@
     width: 605px;
     grid-gap: 2px 2px;
     border-radius: 111px;
+  
 }
 
 

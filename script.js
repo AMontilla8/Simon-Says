@@ -17,8 +17,10 @@ var redAudio = document.querySelector("#redAudio")
 var blueAudio = document.querySelector("#blueAudio")
 var yellowAudio = document.querySelector("#yellowAudio")
 
-const green = greenAudio, greenSection
-const red = redAudio, redSection
-const blue = blueAudio, blueSection
-const yellow = yellowAudio, yellowSection
+topleft.addEventListener('click', (event) => {
+    if (on) {
+        
+    }
+})
 
+let green = new topleft ("#topleft", "#greenAudio")
