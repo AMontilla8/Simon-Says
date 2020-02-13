@@ -17,40 +17,38 @@
     var blueAudio = document.querySelector("#blueAudio")
     var yellowAudio = document.querySelector("#yellowAudio")
 
-
-
-    const sequences = [ 
-        getRandomPanel(),
-         getRandomPanel(),
-          getRandomPanel(),
-           getRandomPanel()
-    ];
+    class Color {
+        constructor(name, source, audioSource){
+          this.name = name;
+          this.source = document.querySelector(source);
+          this.audioSource = audioSource;
+        }
+      }
+      
+      let green = new Color("green", "#topLeft", "#greenAudio");
+      let yellow = new Color("yellow", "#bottomLeft", "#redAudio");
+      let blue = new Color("blue", "#bottomRight", "#blueAudio");
+      let red = new Color("red", "#topRight", "#yellowAudio");
+      
+      let colors = [green, yellow, blue, red]
+    
+    
+    
+    
     
     const panel = [
         topLeft, topRight, bottomRight, bottomLeft
     ];
     
-    const getRandomPanel = () => {
+     const getRandomPanel = () => {
         const panels = [
           topLeft,
           topRight,
-          bottomRight,
-          bottomLeft
+          bottomright,
+          bottomleft
         ];
         return panels[parseInt(Math.random() * panels.length)];
       };
-
-    const flash = panel => {
-        return new Promise((resolve, reject) =>{
-        panel.className += 'active';
-        setTimeout(() => {
-            panel.className = board.className.replace('active',
-            ''
-            );
-                setTimeout(() => {
-            resolve();
-                }, 250);
-        }, 500);
-    });
-};
-
+      
+      const sequence = [getRandomPanel()];
+    
