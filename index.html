@@ -18,15 +18,23 @@
     	<source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3">
     </audio>
 
-    <title>Simon Say's</title>
+    <title>Simon Game</title>
 </head>
 <body>
 
     <div class="board">
-        <div id="topleft" text="1"></div>
-        <div id="topright"></div>
-        <div id="bottomleft"></div>
-        <div id="bottomright"></div>
+        <div onclick="panelClicked(event.currentTarget)"
+         class="panel" id="topright">
+        </div>
+        <div onclick="panelClicked(event.currentTarget)"
+         class="panel" id="topleft">
+        </div>
+        <div onclick="panelClicked(event.currentTarget)"
+         class="panel" id="bottomleft">
+        </div>
+        <div onclick="panelClicked(event.currentTarget)"
+         class="panel" id="bottomright">
+        </div>
         <div id="innercircle">
             <div id="innertitle">Simon Say's</div>
             <div id="innerbuttom">
