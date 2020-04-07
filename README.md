@@ -1,4 +1,6 @@
-# Simon-Says
+https://amontilla8.github.io/Simon-Says/
+
+## Simon-Says
 
 My first Game Running on Javascript.
 
